@@ -13,3 +13,6 @@ const ShopContextProvider = (props)=>{
     )
 }
 export default ShopContextProvider;
+
+// explanation--
+// first we created ShopContext using createContext then we have created one function -ShopContextProvider  where we pass the props and also created a contextValue variable where we stored all the data/product where we want to access using context. Then we return ShopContextProvider and then we pass the value and wrap props.children.

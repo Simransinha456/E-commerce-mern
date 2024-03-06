@@ -9,7 +9,6 @@
   background: linear-gradient(180deg, #fccad5, #ffffff);
 }
 .offers-left {
-  /* flex: 1; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,4 +39,53 @@
   align-items: center;
   justify-content: flex-end;
   padding-top: 30px;
+}
+
+
+/* Responsive styles */
+
+/* For screens smaller than 768px (tablets and phones) */
+@media only screen and (max-width: 768px) {
+  .offers {
+    flex-direction: column;
+    height: auto;
+    padding: 40px;
+    text-align: center;
+  }
+  .offers-left {
+    justify-content: center;
+    align-items: center;
+  }
+  .offers-left h1 {
+    font-size: 40px;
+  }
+  .offers-left p {
+    font-size: 18px;
+  }
+  .offers-left button {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .offers-right {
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
+
+/* For screens smaller than 480px (most phones in portrait mode) */
+@media only screen and (max-width: 480px) {
+  .offers-left h1 {
+    font-size: 32px;
+  }
+  .offers-left p {
+    font-size: 16px;
+  }
+  .offers-left button {
+    width: 180px;
+    height: 45px;
+    font-size: 18px;
+    margin-top: 15px;
+  }
 }
