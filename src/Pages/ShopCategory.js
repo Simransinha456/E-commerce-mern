@@ -9,7 +9,7 @@ export const ShopCategory = (props) => {
   console.log(props.category);
   return (
     <div className="shop-category">
-      <img className='shopcategory-banner' src={props.banner} alt="" />
+      <img className="shopcategory-banner" src={props.banner} alt="" />
       <div className="shopcategory-indexSort">
         <p>
           <span>Showing 1-12</span>out of 36 products
@@ -36,9 +36,7 @@ export const ShopCategory = (props) => {
           }
         })}
       </div>
-      <div className="shopcategory-loadmore">
-        Explore More
-      </div>
+      <div className="shopcategory-loadmore">Explore More</div>
     </div>
   );
 };
