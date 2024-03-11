@@ -1,15 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./NewCollections.css";
-import new_collections from ".././Assets/new_collections";
+// import new_collections from ".././Assets/new_collections";
 import Item from "../Item/Item";
 
 const NewCollections = () => {
+
+  //fetched from backend
+  const[new_collection, setNew_Collection]= useState([]);
+
+  useEffect(()=>{
+    fetch('http://localhost:8000/newproduct/newcollection')
+        .then((response)=> response.json())
+        .then((data)=>setNew_Collection(data))
+        .catch((error) => console.error('Error fetching products:', error));
+  },[])
+
+  
   return (
     <div className="new-collections">
       <h1>NEW COLLECTIONS</h1>
       <hr />
       <div className="collections">
-        {new_collections.map((item, i) => {
+        {new_collection.map((item, i) => {
           return (
             <Item
               key={i}

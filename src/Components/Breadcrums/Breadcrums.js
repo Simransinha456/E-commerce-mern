@@ -9,8 +9,8 @@ const Breadcrums = (props) => {
     <div className="breadcrum">
       HOME <img src={arrow_icon} />
       SHOP <img src={arrow_icon} />
-      {product.category} <img src={arrow_icon} />
-      {product.name}
+      {product?.category} <img src={arrow_icon} />
+      {product?.name}
     </div>
   );
 };
