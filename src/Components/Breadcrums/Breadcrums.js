@@ -1,3 +1,6 @@
+// This page linked ith Item.js --
+// 1st part of Product.js page
+
 import React from "react";
 import "./Breadcrums.css";
 import arrow_icon from ".././Assets/breadcrum_arrow.png";
@@ -14,5 +17,4 @@ const Breadcrums = (props) => {
     </div>
   );
 };
-
 export default Breadcrums;

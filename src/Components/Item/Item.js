@@ -9,7 +9,7 @@ const Item = (props) => {
 
   return (
     <div className="item">
-      <Link to={`/product/${props.id}`}>
+      <Link to={`/product/${props.id}`}> {/* it will visible in params */}
         <img onClick={window.scrollTo(0, 0)} src={props.image}/>
       </Link>
       <p>{props.name}</p>

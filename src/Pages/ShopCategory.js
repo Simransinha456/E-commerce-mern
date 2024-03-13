@@ -3,7 +3,7 @@ import "./CSS/ShopCategory.css";
 import { ShopContext } from "../Context/ShopContext";
 import Item from "../Components/Item/Item";
 
-export const ShopCategory = (props) => {
+export const ShopCategory = (props) => { // props received from app.js
   const { all_product } = useContext(ShopContext); // inserted all_product data using Context
   // console.log(props.category);
   return (

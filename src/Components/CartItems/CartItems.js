@@ -18,7 +18,7 @@ const CartItems = () => {
       <hr />
 
       {all_product.map((e) => {
-        if (cartItems[e.id] > 0) {
+        if (cartItems[e.id] > 0) { // items is there already in cart
           return (
             <div>
               <div className="cartitems-format cartitems-format-main">
