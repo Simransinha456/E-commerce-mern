@@ -1,3 +1,5 @@
+// 1st page ka 6th part---------
+
 import React from 'react'
 import './NewsLetter.css'
 

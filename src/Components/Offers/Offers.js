@@ -1,3 +1,5 @@
+// 1st page ka 4th part---
+
 import React from 'react'
 import './Offers.css'
 import exclusive_image from '.././Assets/exclusive_image.png'

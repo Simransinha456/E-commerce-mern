@@ -1,3 +1,5 @@
+// 1st page ka 5th part---------
+
 import React, { useEffect, useState } from "react";
 import "./NewCollections.css";
 // import new_collections from ".././Assets/new_collections";
@@ -15,7 +17,6 @@ const NewCollections = () => {
         .catch((error) => console.error('Error fetching products:', error));
   },[])
 
-  
   return (
     <div className="new-collections">
       <h1>NEW COLLECTIONS</h1>

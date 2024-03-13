@@ -1,3 +1,5 @@
+// 1st page ka 2nd part---------
+
 import React from "react";
 import "./Hero.css";
 import hand_icon from ".././Assets/hand_icon.png";

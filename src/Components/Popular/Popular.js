@@ -1,9 +1,13 @@
+// 1st page ka 3rd part---------
+
 import React, { useEffect, useState } from "react";
 import "./Popular.css";
 // import data_product from ".././Assets/data";
 import Item from "../Item/Item";
 
 const Popular = () => {
+
+  //from backend---
   const[popular_products, setPopular_Products]= useState([]);
 
   useEffect(()=>{
@@ -19,6 +23,7 @@ const Popular = () => {
       <h1>POPULAR IN WOMEN</h1>
       <hr />
       <div className="popular-item">
+      {/* The popular_products.map() function is used to iterate over each item in the popular_products array and render an Item component for each item. The Item component is passed various props such as id, name, image, new_price, and old_price. */}
         {popular_products.map((item) => {
           return (
             <Item
